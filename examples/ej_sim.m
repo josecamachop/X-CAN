@@ -43,7 +43,7 @@ ylabel('XtX','FontSize',20)
 
 %% XCAN: PCA vs XP-constraints
 
-lambda = [0 .1 0 .1];
+lambda = [0 .01 0 .01];
 lambda2 = [0 0 .1 .1];
 R = [3 3 3 3]
 close all
@@ -68,7 +68,7 @@ end
 
 %% XCAN: Number of components
 
-lambda = [.1 .1 .1];
+lambda = [.01 .01 .01];
 lambda2 = [.1 .1 .1];
 R = [1 2 3]
 close all
@@ -113,7 +113,7 @@ plot_map(XX)
 ylabel('XtX','FontSize',20)
 
 lambda = [.01];
-lambda2 = [.01];
+lambda2 = [.1];
 R = [3];
 close all
 clc
